@@ -111,7 +111,7 @@ dcos:
   selinux_mode: enforcing
 
   config:
-    cluster_name: "ansible-dcos"
+    cluster_name: "${var.cluster_name}"
     security: permissive
     bootstrap_url: http://${local.bootstrap_ansible_private_ips}:8080
     exhibitor_storage_backend: static
