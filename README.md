@@ -1,8 +1,8 @@
 # DC/OS Terraform Infrastructure Module with Ansible Bridge Module (AWS)
 
-The following is a quick demo of how to use DC/OS Terraform Infrastructure Module with DC/OS Terraform Ansible Bridge Module on AWS to create a DC/OS Open cluster on AWS. This is being made available for users that wish to use Ansible as a management tool for installing and maintaing DC/OS instead of the default DC/OS Core. The Infrastructure Module is responsible for standing up the Infrastructure pieces necessary to have a running DC/OS Cluster while the Ansible Bridge module is used to create a `hosts` file to run your ansible roles against. 
+The following is a quick demo of how to use DC/OS Terraform [Infrastructure Module](https://github.com/dcos-terraform/terraform-aws-infrastructure) with DC/OS Terraform [Ansible Bridge Module](https://github.com/dcos-terraform/terraform-localfile-dcos-ansible-bridge) on AWS to create a DC/OS Open cluster on AWS. This is being made available for users that wish to use Ansible as a management tool for installing and maintaing DC/OS instead of the default DC/OS Core. The Infrastructure Module is responsible for standing up the Infrastructure pieces necessary to have a running DC/OS Cluster while the Ansible Bridge module is used to create a `hosts` file to run your ansible roles against. 
 
-In this example Ansible Roles are being supplied from the `dcos-ansible` repo just to provide users with a working example. Please feel free to use you own Ansible Code here as a replacement. 
+In this example Ansible Roles are being supplied from the [`ansible-dcos`](https://github.com/MrMarvin/ansible-dcos) repo just to provide users with a working example. Please feel free to use you own Ansible Code here as a replacement. 
 
 We will setup a small Open cluster in `us-east-1` with 1 Bootstrap, 1 Master, 1 Private Agent and 1 Public Agent. Please feel free to adjust the variables in the `main.tf` to fit your needs. 
 
@@ -10,9 +10,9 @@ We will setup a small Open cluster in `us-east-1` with 1 Bootstrap, 1 Master, 1 
 
 This is a quick and dirty example, so for more information, please read the docs pertaining to both of the Terraform Modules as well as the `dcos-ansible` repo for customizied usage options:
 
-- DC/OS Terraform Infrastructure Module
-- DC/OS Terraform Ansible Bridge
-- DC/OS Ansible
+- [DC/OS Terraform Infrastructure Module](https://github.com/dcos-terraform/terraform-aws-infrastructure)
+- [DC/OS Terraform Ansible Bridge](https://github.com/dcos-terraform/terraform-localfile-dcos-ansible-bridge)
+- [DC/OS Ansible](https://github.com/MrMarvin/ansible-dcos)
 
 ## Usage
 
